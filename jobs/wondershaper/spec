@@ -5,6 +5,7 @@ packages: []
 templates:
   bin/post-start.erb: bin/post-start  
   bin/pre-stop.erb: bin/pre-stop
+  bin/wondershaper: bin/wondershaper
 
 # Documentation https://bosh.io/docs/links.html
 # Tutorial      https://gist.github.com/Amit-PivotalLabs/c39528248b8cdc4ba8e347f8aa68abb6
