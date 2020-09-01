@@ -1,0 +1,7 @@
+---
+- type: replace
+  path: /releases/name=wondershaper
+  value:
+    name: wondershaper
+    version: create
+    url: file://.
