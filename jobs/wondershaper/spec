@@ -3,19 +3,24 @@ name: wondershaper
 
 packages: []
 templates:
-  config/bpm.yml: config/bpm.yml
+  bin/post-start.erb: bin/post-start  
+  bin/pre-stop.erb: bin/pre-stop
 
 # Documentation https://bosh.io/docs/links.html
 # Tutorial      https://gist.github.com/Amit-PivotalLabs/c39528248b8cdc4ba8e347f8aa68abb6
 consumes: []
 
-provides:
-- name: wondershaper
-  type: wondershaper
-  properties:
-  - port
+provides: []
 
 properties:
-  port:
-    description: Bind to this port
-    default: 8080
+  interface:
+    description: nic to instrument with wondershaper
+    default: eth0
+  dspeed:
+    description: wondershaper download speed to enforce, in kbs
+    default: 2048
+
+  uspeed:
+    description: wondershaper upload speed to enforce, in kbs
+    default: 512
+  

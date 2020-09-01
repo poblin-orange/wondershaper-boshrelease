@@ -1,5 +1,0 @@
-check process wondershaper
-  with pidfile /var/vcap/sys/run/bpm/wondershaper/wondershaper.pid
-  start program "/var/vcap/jobs/bpm/bin/bpm start wondershaper"
-  stop program "/var/vcap/jobs/bpm/bin/bpm stop wondershaper"
-  group vcap
