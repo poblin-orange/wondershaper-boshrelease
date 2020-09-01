@@ -1,6 +1,21 @@
 ---
 name: wondershaper
+
 packages: []
 templates:
-  ignoreme: ignoreme
-properties: {}
+  config/bpm.yml: config/bpm.yml
+
+# Documentation https://bosh.io/docs/links.html
+# Tutorial      https://gist.github.com/Amit-PivotalLabs/c39528248b8cdc4ba8e347f8aa68abb6
+consumes: []
+
+provides:
+- name: wondershaper
+  type: wondershaper
+  properties:
+  - port
+
+properties:
+  port:
+    description: Bind to this port
+    default: 8080

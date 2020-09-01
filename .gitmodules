@@ -1,3 +1,6 @@
 [submodule "wondershaper"]
-	path = wondershaper
+	path = src/wondershaper
+	url = https://github.com/magnific0/wondershaper
+[submodule "src/wondershaper"]
+	path = src/wondershaper
 	url = https://github.com/magnific0/wondershaper
